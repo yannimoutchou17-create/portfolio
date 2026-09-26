@@ -21,3 +21,20 @@ body {
     line-height: 1.65;
     -webkit-font-smoothing: antialiased;
 }
+
+h1 {
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-size: clamp(30px, 5vw, 44px);
+    margin: 0 0 10px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+h2 {
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-size: 13px;
+    color: var(--accent);
+    font-weight: 500;
+    margin: 0 0 22px;
+    letter-spacing: 0.3px;
+}
