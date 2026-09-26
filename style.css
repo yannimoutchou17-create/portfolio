@@ -1,0 +1,23 @@
+:root {
+    --bg: #10141B;
+    --panel: #161C26;
+    --panel2: #1B222E;
+    --text: #E9E7DE;
+    --text-dim: #8D96A6;
+    --border: #2A3140;
+    --accent: #E8A33D;
+    --accent-dim: #8A6A34;
+    --ok: #6FCF97;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'IBM Plex Sans', system-ui, sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+}
