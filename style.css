@@ -1,12 +1,12 @@
 :root {
-    --bg: #10141B;
-    --panel: #161C26;
-    --panel2: #1B222E;
-    --text: #E9E7DE;
-    --text-dim: #8D96A6;
-    --border: #2A3140;
-    --accent: #E8A33D;
-    --accent-dim: #8A6A34;
+    --bg: #0A1222;
+    --panel: #101B30;
+    --panel2: #15223B;
+    --text: #E7EDF7;
+    --text-dim: #8C9BB5;
+    --border: #22314F;
+    --accent: #4FA8FF;
+    --accent-dim: #2C5C8A;
     --ok: #6FCF97;
     padding-top: env(safe-area-inset-top, 0px);
     padding-bottom: env(safe-area-inset-bottom, 0px);
@@ -24,13 +24,17 @@ html {
 
 ::selection {
     background: var(--accent);
-    color: #171A14;
+    color: #0A1222;
 }
 
 body {
     margin: 0;
     background: var(--bg);
     color: var(--text);
+    background-image:
+        linear-gradient(rgba(79, 168, 255, .05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(79, 168, 255, .05) 1px, transparent 1px);
+    background-size: 34px 34px;
     font-family: 'IBM Plex Sans', system-ui, sans-serif;
     line-height: 1.65;
     -webkit-font-smoothing: antialiased;
@@ -52,8 +56,25 @@ body {
 }
 
 header.hero {
-    padding: 96px 0 52px;
+    padding: 64px 0 52px;
     border-bottom: 1px solid var(--border);
+}
+
+.hero-top {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-bottom: 22px;
+    flex-wrap: wrap;
+}
+
+.avatar {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--border);
+    flex: none;
 }
 
 .prompt {
@@ -103,7 +124,7 @@ h1 {
     font-size: 14px;
     padding: 9px 15px;
     border: 1px solid var(--border);
-    border-radius: 3px;
+    border-radius: 2px;
     background: var(--panel);
     transition: border-color .2s ease;
 }
@@ -125,20 +146,35 @@ h1 {
     margin-top: 26px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 22px;
     font-size: 15px;
 }
 
 .contacts a {
     color: var(--text);
     text-decoration: none;
-    border-bottom: 1px solid var(--accent-dim);
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    border-bottom: 1px solid transparent;
     transition: color .15s ease, border-color .15s ease;
 }
 
 .contacts a:hover {
     border-color: var(--accent);
     color: var(--accent);
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    fill: var(--text-dim);
+    transition: fill .15s ease;
+    flex: none;
+}
+
+.contacts a:hover .icon {
+    fill: var(--accent);
 }
 
 section {
@@ -182,7 +218,7 @@ p.lead {
     font-size: 13px;
     padding: 5px 11px;
     border: 1px solid var(--border);
-    border-radius: 3px;
+    border-radius: 2px;
     color: var(--text-dim);
     background: var(--panel);
     transition: border-color .15s ease, color .15s ease;
@@ -216,17 +252,48 @@ p.lead {
 }
 
 .card {
+    position: relative;
     background: var(--panel);
     border: 1px solid var(--border);
-    border-radius: 4px;
+    border-radius: 2px;
     padding: 22px;
     transition: border-color .18s ease, transform .18s ease, background .18s ease;
+}
+
+.card::before,
+.card::after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    pointer-events: none;
+    border-color: var(--accent-dim);
+    transition: border-color .18s ease;
+}
+
+.card::before {
+    top: -1px;
+    left: -1px;
+    border-top: 1px solid;
+    border-left: 1px solid;
+}
+
+.card::after {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
 }
 
 .card:hover {
     border-color: var(--accent-dim);
     background: var(--panel2);
     transform: translateY(-2px);
+}
+
+.card:hover::before,
+.card:hover::after {
+    border-color: var(--accent);
 }
 
 .card h3 {
@@ -308,7 +375,7 @@ p.lead {
     flex: 1;
     height: 6px;
     background: var(--panel2);
-    border-radius: 3px;
+    border-radius: 2px;
     overflow: hidden;
 }
 

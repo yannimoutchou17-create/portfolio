@@ -16,14 +16,37 @@
     <div class="wrap">
 
         <header class="hero">
-            <h1>Yanni Moutchou<span class="cursor"></span></h1>
-            <p class="role">Étudiant en Licence 3 Informatique — Université de Lille</p>
+            <div class="hero-top">
+                <img class="avatar" src="photo.png" alt="Photo de Yanni Moutchou">
+                <div>
+                    <h1>Yanni Moutchou<span class="cursor"></span></h1>
+                    <p class="role">Étudiant en Licence 3 Informatique — Université de Lille</p>
+                </div>
+            </div>
             <div class="status"><span class="dot"></span> Disponible pour un stage de 12 semaines, à partir du 19 avril
                 2027</div>
             <div class="contacts">
-                <a href="mailto:yannimoutchou17@gmail.com">yannimoutchou17@gmail.com</a>
-                <a href="https://github.com/yannimoutchou17-create" target="_blank"
-                    rel="noopener">github.com/yannimoutchou17-create</a>
+                <a href="mailto:yannimoutchou17@gmail.com">
+                    <svg viewBox="0 0 24 24" class="icon">
+                        <path
+                            d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13Zm2.1.5 7.9 6.2L19.9 6H4.1Zm15.9 1.6-7.4 5.8a1 1 0 0 1-1.2 0L4 7.6V18h16V7.6Z" />
+                    </svg>
+                    yannimoutchou17@gmail.com
+                </a>
+                <a href="https://github.com/yannimoutchou17-create" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" class="icon">
+                        <path
+                            d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.4 9.4 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .26.18.58.69.48A10 10 0 0 0 12 2Z" />
+                    </svg>
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/yanni-moutchou-7591bb429/" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" class="icon">
+                        <path
+                            d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM3.2 8.75h3.5V21H3.2V8.75Zm6.3 0h3.36v1.68h.05c.47-.88 1.6-1.8 3.3-1.8 3.53 0 4.18 2.32 4.18 5.34V21H16.9v-5.5c0-1.31-.02-3-1.83-3-1.83 0-2.11 1.43-2.11 2.9V21H9.5V8.75Z" />
+                    </svg>
+                    LinkedIn
+                </a>
                 <span class="mono" style="color:var(--text-dim);">Lille, France</span>
             </div>
         </header>
@@ -56,7 +79,11 @@
             <div class="skillgroup">
                 <div class="label">Outils</div>
                 <div class="chips"><span class="chip">Git / GitLab</span><span class="chip">JUnit</span><span
-                        class="chip">UML</span></div>
+                        class="chip">UML</span><span class="chip">React</span><span class="chip">Webpack</span></div>
+            </div>
+            <div class="skillgroup">
+                <div class="label">Bureautique</div>
+                <div class="chips"><span class="chip">Word</span></div>
             </div>
             <div class="skillgroup">
                 <div class="label">Électronique &amp; hardware</div>
@@ -80,16 +107,24 @@
                     <div class="chips"><span class="chip">Java</span><span class="chip">Travail d'équipe</span></div>
                 </div>
                 <div class="card">
-                    <h3>Jeux en JavaScript</h3>
-                    <p>Réalisation de plusieurs petits jeux en JavaScript, de la logique au rendu.</p>
-                    <div class="chips"><span class="chip">JavaScript</span></div>
+                    <h3>Boutique de Peluches</h3>
+                    <p>Application e-commerce en React : catalogue avec recherche instantanée, panier
+                        avec gestion des quantités plafonnées au stock, calcul du prix et du poids en
+                        temps réel.</p>
+                    <div class="chips"><span class="chip">React</span><span class="chip">Webpack</span></div>
+                </div>
+                <div class="card">
+                    <h3>Starship — attrape-œufs</h3>
+                    <p>Jeu en JavaScript orienté objet : le joueur déplace un panier pour attraper des
+                        œufs et éviter des fusées, avec gestion des collisions et du score.</p>
+                    <div class="chips"><span class="chip">JavaScript</span><span class="chip">POO</span></div>
                 </div>
                 <div class="card">
                     <h3>Suivi de licence</h3>
-                    <p>Site personnel en HTML/CSS/JS (fichier unique) pour suivre semestres, projets,
-                        compétences et stages, avec fonctionnalités CRUD complètes.</p>
-                    <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span
-                            class="chip">JavaScript</span></div>
+                    <p>Réalisation de nombreux TD en programmation, avec l’utilisation de plusieurs langages et
+                        technologies, notamment :</p>
+                    <div class="chips"><span class="chip">Java</span><span class="chip">PHP</span><span
+                            class="chip">JavaScript</span><span class="chip">C</span></div>
                 </div>
             </div>
         </section>
