@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -5,26 +6,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Yanni Moutchou — Portfolio</title>
+
     <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <div class="topbar"></div>
+
     <div class="wrap">
 
+        <!-- ================= HEADER ================= -->
+
         <header class="hero">
+
             <div class="hero-top">
+
                 <img class="avatar" src="photo.png" alt="Photo de Yanni Moutchou">
+
                 <div>
-                    <h1>Yanni Moutchou<span class="cursor"></span></h1>
-                    <p class="role">Étudiant en Licence 3 Informatique — Université de Lille</p>
+                    <h1>
+                        Yanni Moutchou<span class="cursor"></span>
+                    </h1>
+
+                    <p class="role">
+                        Étudiant en Licence 3 Informatique — Université de Lille
+                    </p>
                 </div>
+
             </div>
-            <div class="status"><span class="dot"></span> Disponible pour un stage de 12 semaines, à partir du 19 avril
-                2027</div>
+
+            <div class="status">
+                <span class="dot"></span>
+                Disponible pour un stage de 12 semaines à partir du 19 avril 2027
+            </div>
+
             <div class="contacts">
                 <a href="mailto:yannimoutchou17@gmail.com">
                     <svg viewBox="0 0 24 24" class="icon">
@@ -49,154 +69,546 @@
                 </a>
                 <span class="mono" style="color:var(--text-dim);">Lille, France</span>
             </div>
+
         </header>
 
+
+        <!-- ================= À PROPOS ================= -->
+
         <section>
+
             <h2>à propos</h2>
+
             <p class="lead">
-                Après deux ans de classes préparatoires à l'ESTIN (Algérie), j'ai rejoint l'Université
-                de Lille où je termine ma Licence 3 Informatique. J'aime comprendre les choses en
-                profondeur avant de les utiliser — du bas niveau (C, assembleur) aux langages
-                fonctionnels (Haskell), en passant par le développement web et les jeux.
-                Ponctuel et curieux, je cherche un stage où continuer à apprendre en construisant
-                de vraies choses.
+
+                Étudiant en Licence 3 Informatique à l'Université de Lille,
+                après deux années de formation préparatoire en informatique
+                à l'ESTIN en Algérie.
+
+                J'ai réalisé de nombreux projets et travaux pratiques en
+                C, Java, Python, Haskell, PHP, JavaScript et assembleur,
+                ce qui m'a permis de développer une bonne logique de
+                programmation et d'explorer différents domaines de
+                l'informatique.
+
+                <br><br>
+
+                Je m'intéresse particulièrement au développement logiciel,
+                au développement web et à la conception de programmes
+                structurés et maintenables.
+
             </p>
+
         </section>
 
+
+        <!-- ================= CE QUE JE RECHERCHE ================= -->
+
         <section>
-            <h2>compétences</h2>
-            <div class="skillgroup">
-                <div class="label">Langages</div>
+
+            <h2>objectif</h2>
+
+            <div class="card">
+
+                <h3>Stage en développement informatique</h3>
+
+                <p>
+                    Je recherche un stage de 12 semaines minimum à partir
+                    du 19 avril 2027 afin de mettre en pratique mes
+                    connaissances en développement logiciel et de découvrir
+                    les méthodes de travail utilisées en entreprise.
+                </p>
+
                 <div class="chips">
-                    <span class="chip">Java</span><span class="chip">Python</span><span class="chip">C</span>
-                    <span class="chip">JavaScript</span><span class="chip">HTML/CSS</span><span class="chip">PHP</span>
+
+                    <span class="chip">Développement logiciel</span>
+                    <span class="chip">Développement web</span>
+                    <span class="chip">Java</span>
+                    <span class="chip">Python</span>
+                    <span class="chip">C</span>
+                    <span class="chip">JavaScript</span>
+
                 </div>
+
             </div>
-            <div class="skillgroup">
-                <div class="label">Notions</div>
-                <div class="chips"><span class="chip">Haskell</span><span class="chip">Assembleur</span></div>
-            </div>
-            <div class="skillgroup">
-                <div class="label">Outils</div>
-                <div class="chips"><span class="chip">Git / GitLab</span><span class="chip">JUnit</span><span
-                        class="chip">UML</span><span class="chip">React</span><span class="chip">Webpack</span></div>
-            </div>
-            <div class="skillgroup">
-                <div class="label">Bureautique</div>
-                <div class="chips"><span class="chip">Word</span></div>
-            </div>
-            <div class="skillgroup">
-                <div class="label">Électronique &amp; hardware</div>
-                <div class="chips"><span class="chip">Électronique</span><span class="chip">Architecture des
-                        ordinateurs</span></div>
-            </div>
-            <div class="skillgroup">
-                <div class="label">Mathématiques</div>
-                <div class="chips"><span class="chip">Analyse</span><span class="chip">Algèbre</span><span
-                        class="chip">Probabilités</span></div>
-            </div>
+
         </section>
 
+
+        <!-- ================= COMPÉTENCES ================= -->
+
         <section>
+
+            <h2>compétences</h2>
+
+
+            <div class="skillgroup">
+
+                <div class="label">
+                    Langages
+                </div>
+
+                <div class="chips">
+
+                    <span class="chip">Java</span>
+                    <span class="chip">Python</span>
+                    <span class="chip">C</span>
+                    <span class="chip">JavaScript</span>
+                    <span class="chip">PHP</span>
+                    <span class="chip">Haskell</span>
+                    <span class="chip">HTML/CSS</span>
+                    <span class="chip">Assembleur</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="skillgroup">
+
+                <div class="label">
+                    Programmation
+                </div>
+
+                <div class="chips">
+
+                    <span class="chip">Algorithmique</span>
+                    <span class="chip">POO</span>
+                    <span class="chip">Structures de données</span>
+                    <span class="chip">Récursivité</span>
+                    <span class="chip">Gestion mémoire</span>
+                    <span class="chip">Débogage</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="skillgroup">
+
+                <div class="label">
+                    Développement web
+                </div>
+
+                <div class="chips">
+
+                    <span class="chip">HTML</span>
+                    <span class="chip">CSS</span>
+                    <span class="chip">JavaScript</span>
+                    <span class="chip">PHP</span>
+                    <span class="chip">React</span>
+                    <span class="chip">Webpack</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="skillgroup">
+
+                <div class="label">
+                    Bases de données
+                </div>
+
+                <div class="chips">
+
+                    <span class="chip">SQL</span>
+                    <span class="chip">PostgreSQL</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="skillgroup">
+
+                <div class="label">
+                    Outils
+                </div>
+
+                <div class="chips">
+
+                    <span class="chip">Git</span>
+                    <span class="chip">GitLab</span>
+                    <span class="chip">JUnit</span>
+                    <span class="chip">UML</span>
+                    <span class="chip">Makefile</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="skillgroup">
+
+                <div class="label">
+                    Informatique générale
+                </div>
+
+                <div class="chips">
+
+                    <span class="chip">Architecture des ordinateurs</span>
+                    <span class="chip">Électronique</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="skillgroup">
+
+                <div class="label">
+                    Mathématiques
+                </div>
+
+                <div class="chips">
+
+                    <span class="chip">Analyse</span>
+                    <span class="chip">Algèbre</span>
+                    <span class="chip">Probabilités</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJETS ================= -->
+
+        <section>
+
             <h2>projets</h2>
+
             <div class="projects">
+
+
+                <!-- TOWER DEFENSE -->
+
                 <div class="card">
+
                     <h3>Tower Defense</h3>
-                    <p>Jeu réalisé en groupe. Chef de groupe, responsable de l'ensemble du
-                        développement en Java.</p>
-                    <div class="chips"><span class="chip">Java</span><span class="chip">Travail d'équipe</span></div>
+
+                    <p>
+                        Projet Java réalisé en groupe dans le cadre de ma
+                        formation, avec un rôle de chef de groupe et de
+                        responsable du développement.
+                    </p>
+
+                    <p>
+                        Développement du plateau, des chemins, des tours,
+                        des ennemis et des vagues. Mise en place d'une
+                        architecture orientée objet avec classes abstraites,
+                        héritage, interfaces et polymorphisme.
+                    </p>
+
+                    <p>
+                        Gestion du temps avec Thread et système
+                        d'événements. Tests avec JUnit et automatisation
+                        des commandes avec Makefile.
+                    </p>
+
+                    <div class="chips">
+
+                        <span class="chip">Java</span>
+                        <span class="chip">POO</span>
+                        <span class="chip">JUnit</span>
+                        <span class="chip">Thread</span>
+                        <span class="chip">Makefile</span>
+                        <span class="chip">Git</span>
+
+                    </div>
+
                 </div>
+
+
+                <!-- BOUTIQUE -->
+
                 <div class="card">
+
                     <h3>Boutique de Peluches</h3>
-                    <p>Application e-commerce en React : catalogue avec recherche instantanée, panier
-                        avec gestion des quantités plafonnées au stock, calcul du prix et du poids en
-                        temps réel.</p>
-                    <div class="chips"><span class="chip">React</span><span class="chip">Webpack</span></div>
+
+                    <p>
+                        Application e-commerce développée avec React et
+                        JavaScript.
+                    </p>
+
+                    <p>
+                        Catalogue de produits avec recherche instantanée,
+                        panier avec contrôle des quantités selon le stock,
+                        ainsi que calcul en temps réel du prix et du poids
+                        total.
+                    </p>
+
+                    <p>
+                        Utilisation d'une architecture basée sur des
+                        composants React avec Webpack et npm.
+                    </p>
+
+                    <div class="chips">
+
+                        <span class="chip">React</span>
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">Webpack</span>
+                        <span class="chip">npm</span>
+
+                    </div>
+
                 </div>
+
+
+                <!-- STARSHIP -->
+
                 <div class="card">
-                    <h3>Starship — attrape-œufs</h3>
-                    <p>Jeu en JavaScript orienté objet : le joueur déplace un panier pour attraper des
-                        œufs et éviter des fusées, avec gestion des collisions et du score.</p>
-                    <div class="chips"><span class="chip">JavaScript</span><span class="chip">POO</span></div>
+
+                    <h3>Starship — jeu JavaScript</h3>
+
+                    <p>
+                        Jeu développé en JavaScript orienté objet.
+                        Le joueur contrôle un panier permettant d'attraper
+                        des œufs tout en évitant des fusées.
+                    </p>
+
+                    <p>
+                        Implémentation des interactions clavier, des
+                        collisions, du score et de l'apparition dynamique
+                        des objets.
+                    </p>
+
+                    <div class="chips">
+
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">POO</span>
+                        <span class="chip">Game Development</span>
+
+                    </div>
+
                 </div>
+
+
+                <!-- SUIVI LICENCE -->
+
                 <div class="card">
+
                     <h3>Suivi de licence</h3>
-                    <p>Réalisation de nombreux TD en programmation, avec l’utilisation de plusieurs langages et
-                        technologies, notamment :</p>
-                    <div class="chips"><span class="chip">Java</span><span class="chip">PHP</span><span
-                            class="chip">JavaScript</span><span class="chip">C</span></div>
+
+                    <p>
+                        Site personnel développé en HTML, CSS et JavaScript
+                        permettant de suivre mon parcours universitaire,
+                        mes semestres, mes projets, mes compétences et mes
+                        stages.
+                    </p>
+
+                    <p>
+                        Le projet s'appuie également sur de nombreux travaux
+                        pratiques réalisés pendant ma formation en C, Java,
+                        Python, Haskell, PHP, JavaScript et assembleur.
+                    </p>
+
+                    <div class="chips">
+
+                        <span class="chip">HTML</span>
+                        <span class="chip">CSS</span>
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">C</span>
+                        <span class="chip">Java</span>
+                        <span class="chip">Python</span>
+
+                    </div>
+
                 </div>
+
             </div>
+
         </section>
 
-        <section>
-            <h2>formation</h2>
-            <div class="timeline">
-                <div class="tl-item">
-                    <div class="tl-date">2026 — 2027 (en cours)</div>
-                    <div class="tl-title">Licence 3 Informatique</div>
-                    <div class="tl-sub">Université de Lille</div>
-                </div>
-                <div class="tl-item">
-                    <div class="tl-date">2025 — 2026</div>
-                    <div class="tl-title">Licence 2 Informatique</div>
-                    <div class="tl-sub">Université de Lille</div>
-                </div>
-                <div class="tl-item">
-                    <div class="tl-date">2 ans</div>
-                    <div class="tl-title">Classes préparatoires</div>
-                    <div class="tl-sub">ESTIN, Algérie</div>
-                </div>
-            </div>
-        </section>
+
+        <!-- ================= EXPÉRIENCE ================= -->
+
+
+        <!-- ================= ASSOCIATIF ================= -->
 
         <section>
+
             <h2>engagement associatif</h2>
+
+
             <div class="skillgroup">
-                <div class="label"><strong style="color:var(--text)">Bytecraft</strong> &nbsp;·&nbsp; designer, avec
-                    quelques missions ponctuelles de développement back-end</div>
+
+                <div class="label">
+
+                    <strong style="color:var(--text)">
+                        Bytecraft
+                    </strong>
+
+                    &nbsp;·&nbsp;
+
+                    Designer / développement back-end ponctuel
+
+                </div>
+
+                <p>
+                    Création de contenus et d'éléments visuels ainsi que
+                    participation ponctuelle à des missions de développement
+                    back-end.
+                </p>
+
             </div>
+
+
             <div class="skillgroup">
-                <div class="label"><strong style="color:var(--text)">Nexus</strong> &nbsp;·&nbsp; designer, avec
-                    quelques missions ponctuelles de développement back-end</div>
+
+                <div class="label">
+
+                    <strong style="color:var(--text)">
+                        Nexus
+                    </strong>
+
+                    &nbsp;·&nbsp;
+
+                    Designer / développement back-end ponctuel
+
+                </div>
+
+                <p>
+                    Création de contenus et d'éléments visuels et participation
+                    à certaines tâches de développement back-end.
+                </p>
+
             </div>
+
         </section>
 
+
+        <!-- ================= QUALITÉS ================= -->
+
         <section>
+
+            <h2>qualités</h2>
+
+            <div class="chips">
+
+                <span class="chip">Travail en équipe</span>
+                <span class="chip">Bonne organisation</span>
+                <span class="chip">Curieux</span>
+                <span class="chip">Motivé</span>
+                <span class="chip">Ponctuel</span>
+                <span class="chip">Bonne logique de programmation</span>
+                <span class="chip">Envie d'apprendre</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= LANGUES ================= -->
+
+        <section>
+
             <h2>langues</h2>
+
             <div class="langs">
-                <div class="lang-row"><span class="lang-name">Kabyle</span>
+
+
+                <div class="lang-row">
+
+                    <span class="lang-name">
+                        Kabyle
+                    </span>
+
                     <div class="lang-bar">
                         <div class="lang-fill" style="width:100%"></div>
-                    </div><span class="lang-level">Maternelle</span>
+                    </div>
+
+                    <span class="lang-level">
+                        Maternelle
+                    </span>
+
                 </div>
-                <div class="lang-row"><span class="lang-name">Français</span>
+
+
+                <div class="lang-row">
+
+                    <span class="lang-name">
+                        Français
+                    </span>
+
                     <div class="lang-bar">
                         <div class="lang-fill" style="width:90%"></div>
-                    </div><span class="lang-level">Avancé</span>
+                    </div>
+
+                    <span class="lang-level">
+                        Avancé
+                    </span>
+
                 </div>
-                <div class="lang-row"><span class="lang-name">Arabe</span>
+
+
+                <div class="lang-row">
+
+                    <span class="lang-name">
+                        Arabe
+                    </span>
+
                     <div class="lang-bar">
                         <div class="lang-fill" style="width:90%"></div>
-                    </div><span class="lang-level">Avancé</span>
+                    </div>
+
+                    <span class="lang-level">
+                        Avancé
+                    </span>
+
                 </div>
-                <div class="lang-row"><span class="lang-name">Anglais</span>
+
+
+                <div class="lang-row">
+
+                    <span class="lang-name">
+                        Anglais
+                    </span>
+
                     <div class="lang-bar">
                         <div class="lang-fill" style="width:60%"></div>
-                    </div><span class="lang-level">Moyen</span>
+                    </div>
+
+                    <span class="lang-level">
+                        Moyen
+                    </span>
+
                 </div>
+
             </div>
+
         </section>
 
+
+        <!-- ================= CONTACT ================= -->
+
         <footer>
+
             <p style="color:var(--text-dim); font-size:14.5px;">
-                Disponible à partir du 19 avril 2027, 12 semaines minimum.
-                Écrivez-moi à <a href="mailto:yannimoutchou17@gmail.com">yannimoutchou17@gmail.com</a>.
+
+                Disponible pour un stage de 12 semaines minimum
+                à partir du 19 avril 2027.
+
+                <br>
+
+                Écrivez-moi à
+
+                <a href="mailto:yannimoutchou17@gmail.com">
+                    yannimoutchou17@gmail.com
+                </a>
+
             </p>
+
         </footer>
 
     </div>
+
+
     <script src="script.js"></script>
+
 </body>
 
 </html>
+```
